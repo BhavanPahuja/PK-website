@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/form-reset.css" />
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -79,7 +80,7 @@
 							</div>
 							<footer>
 								<ul class="actions">
-									<li><a href="#" class="button large">Contact Me</a></li>
+									<li><a href="#contact-me" class="button large">Contact Me</a></li>
 								</ul>
 							</footer>
 						</section>
@@ -135,31 +136,34 @@
 					</div>
 				</section>
 
+				<div class="contact-me container1">
+					<form name="contact" method="POST" data-netlify="true">
+						<div class="form">
+							<div class="form-txt">
+								<h1 style="padding: 10% 0% 5% 0%;">Contact Me</h1>
+								<h3 style="color: azure;">Please enter the following information, and I will get in touch with you shortly.</h3>
+								
+							</div>
+							<div class="form-details">
+								<input type="text" name="name" id="name" placeholder="Your Name" required>
+								<input type="text" name="subject" id="subject" placeholder="Subject" required>
+								<input type="email" name="email" id="email" placeholder="Email">
+								<input type="text" name="tel" id="tel" placeholder="Your Phone Number" required>
+								
+								<textarea name="message" id="message" cols="75" rows="5" placeholder="Message"></textarea>
+								<button type="submit" class="sendButton button large">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+
 			<!-- Footer -->
 				<section id="footer">
 					<div class="container">
 						<div class="row">
+
 							
-							<div class="col-4 col-12-medium">
-								<section>
-									<header>
-										<h2>What's this all about?</h2>
-									</header>
-									<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
-									<p>
-										This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
-										<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
-										the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
-									</p>
-									<footer>
-										<ul class="actions">
-											<li><a href="#" class="button">Find out more</a></li>
-										</ul>
-									</footer>
-								</section>
-							</div>
-							
-							<div class="col-4 col-6-medium col-12-small">
+							<div class="col-6 col-12-medium">
 								<section>
 									<header>
 										<h2>Frequently Downloaded</h2>
@@ -171,7 +175,7 @@
 									</ul>
 								</section>
 							</div>
-							<div class="col-4 col-12-medium">
+							<div class="col-6 col-12-medium">
 								<section>
 									<header>
 										<h2>Vitae tempor lorem</h2>
